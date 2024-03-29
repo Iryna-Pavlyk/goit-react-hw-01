@@ -13,7 +13,8 @@ const Profile = ({
       <div className={css.about}>
         <img className={css.img} src={image} alt={altUserAv} width={50} />
         <p className={css.textName}>{name}</p>
-        <p className={css.textTag}>@{tag}</p> <p>{location}</p>
+        <p className={css.textTag}>@{tag}</p>
+        <p className={css.textLocation}>{location}</p>
       </div>
       <ul className={css.list}>
         <li className={css.listItem}>

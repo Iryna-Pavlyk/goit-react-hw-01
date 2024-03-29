@@ -4,7 +4,11 @@
 }
 .about {
   text-align: center;
-  padding: 15px;
+  padding: 20px 20px 5px 20px;
+}
+.textTag,
+.textLocation {
+  color: gray;
 }
 .profile {
   border: 2px solid black;
@@ -16,10 +20,12 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  /* justify-content:  */
   background-color: lightblue;
   border-top: 2px solid gray;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
+
 .listItem {
   display: flex;
   flex-direction: column;
@@ -32,9 +38,16 @@
 .listItem:last-child {
   border-right: none;
 }
+
 .itemSpan {
   font-weight: semi-bold;
 }
 .itemNumbers {
   font-weight: bold;
+}
+.img {
+  border: 1px solid gray;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: black;
 }
