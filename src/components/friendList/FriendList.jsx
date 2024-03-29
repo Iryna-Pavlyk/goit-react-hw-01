@@ -1,48 +1,19 @@
 import FriendListItem from "./FriendListItem";
 
-const FriendList = (friends) => {
-  
-  //   friends.map((friend) => {
-  //     return <li key={friend.id}>{friend.name}</li>;
-  //   });
-
+const FriendList = ({ friends }) => {
   return (
     <ul>
-      <li>
-        <FriendListItem
-          avatar={friends.avatar}
-          name={friends.name}
-          isOnline={friends.isOnline}
-        />
-      </li>
-      <li>
-        <FriendListItem
-          avatar={friends.avatar}
-          name={friends.name}
-          isOnline={friends.isOnline}
-        />
-      </li>
-      <li>
-        <FriendListItem
-          avatar={friends.avatar}
-          name={friends.name}
-          isOnline={friends.isOnline}
-        />
-      </li>
-      <li>
-        <FriendListItem
-          avatar={friends.avatar}
-          name={friends.name}
-          isOnline={friends.isOnline}
-        />
-      </li>
-      <li>
-        <FriendListItem
-          avatar={friends.avatar}
-          name={friends.name}
-          isOnline={friends.isOnline}
-        />
-      </li>
+      {friends.map((friend) => {
+        return (
+          <li key={friend.id}>
+            <FriendListItem
+              avatar={friend.avatar}
+              name={friend.name}
+              isOnline={friend.isOnline}
+            />
+          </li>
+        );
+      })}
     </ul>
   );
 };
