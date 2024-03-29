@@ -9,24 +9,26 @@ const Profile = ({
 }) => {
   const altUserAv = "User avatar";
   return (
-    <div>
-      <div>
-        <img src={image} alt={altUserAv} />
+    <div className={css.profile}>
+      <div className={css.about}>
+        <img className={css.img} src={image} alt={altUserAv} width={50} />
         <p className={css.textName}>{name}</p>
-        <p>@{tag}</p> <p>{location}</p>
+        <p className={css.textTag}>@{tag}</p> <p>{location}</p>
       </div>
-      <ul>
-        <li>
-          <span>Followers</span> <span>{followers}</span>
+      <ul className={css.list}>
+        <li className={css.listItem}>
+          <span className={css.itemSpan}>Followers</span>{" "}
+          <span className={css.itemNumbers}>{followers}</span>
         </li>
 
-        <li>
-          <span>Views</span> <span>{views}</span>
+        <li className={css.listItem}>
+          <span className={css.itemSpan}>Views</span>{" "}
+          <span className={css.itemNumbers}>{views}</span>
         </li>
 
-        <li>
-          <span>Likes</span>
-          <span>{likes}</span>
+        <li className={css.listItem}>
+          <span className={css.itemSpan}>Likes</span>
+          <span className={css.itemNumbers}>{likes}</span>
         </li>
       </ul>
     </div>

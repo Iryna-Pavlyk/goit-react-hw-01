@@ -1,4 +1,40 @@
 .textName {
   color: black;
-  font-size: 40px;
+  font-size: 26px;
+}
+.about {
+  text-align: center;
+  padding: 15px;
+}
+.profile {
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 250px;
+  margin: 30px auto;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* justify-content:  */
+  background-color: lightblue;
+  border-top: 2px solid gray;
+}
+.listItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid gray;
+  padding: 5px;
+}
+.listItem:last-child {
+  border-right: none;
+}
+.itemSpan {
+  font-weight: semi-bold;
+}
+.itemNumbers {
+  font-weight: bold;
 }
