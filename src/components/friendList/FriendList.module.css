@@ -4,3 +4,21 @@
 .textOffline {
   color: red;
 }
+.cardsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.cards {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 15px;
+}
+.name {
+  margin-top: 15px;
+  text-align: center;
+}

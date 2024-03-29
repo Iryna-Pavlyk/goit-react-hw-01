@@ -1,0 +1,15 @@
+.table {
+  width: 400px;
+  margin: 30px auto;
+}
+.title {
+  background-color: rgb(92, 93, 94);
+}
+
+.titleText {
+  color: aliceblue;
+}
+
+.row:nth-child(odd) {
+  background: lightblue;
+}
