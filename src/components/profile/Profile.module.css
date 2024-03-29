@@ -4,7 +4,7 @@
 }
 .about {
   text-align: center;
-  padding: 20px 20px 5px 20px;
+  padding: 30px 20px 15px 20px;
 }
 .textTag,
 .textLocation {
@@ -13,13 +13,14 @@
 .profile {
   border: 2px solid black;
   border-radius: 8px;
-  width: 250px;
+  width: 220px;
   margin: 30px auto;
 }
 .list {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  justify-content: space-between;
   background-color: lightblue;
   border-top: 2px solid gray;
   border-bottom-left-radius: 6px;
@@ -33,7 +34,7 @@
   justify-content: center;
   align-items: center;
   border-right: 2px solid gray;
-  padding: 5px;
+  padding: 0 5px;
 }
 .listItem:last-child {
   border-right: none;
